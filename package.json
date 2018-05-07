@@ -1,8 +1,8 @@
 {
   "name": "cookie-consent-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yet another simple reusable cookie box widget without any dependencies.",
-  "main": "dist/index.js",
+  "main": "dist/cookie-constent-box.js",
   "jsnext:main": "src/index.js",
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
