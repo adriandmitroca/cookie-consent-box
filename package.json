@@ -1,7 +1,7 @@
 {
   "name": "cookie-consent-box",
-  "version": "1.1.0",
-  "description": "Yet another simple reusable cookie box widget without any dependencies.",
+  "version": "1.1.1",
+  "description": "A tiny, dependency-free cookie box widget that helps you to be GDPR complaint after including 8 kB of code (gzipped)",
   "main": "dist/cookie-consent-box.js",
   "scripts": {
     "build:scss": "node-sass src/index.scss dist/cookie-consent-box.css",
