@@ -1,10 +1,7 @@
-/* global __dirname, require, module */
-
 const webpack = require('webpack');
-
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const env = require('yargs').argv.env;
 const path = require('path');
-const env = require('yargs').argv.env; // use --env with webpack 2
 const pkg = require('./package.json');
 
 const libraryName = pkg.name;
@@ -20,10 +17,10 @@ if (env === 'build') {
 }
 
 const config = {
-  entry: `${__dirname}/src/index.js`,
+  entry: path.resolve('src/index.js'),
   devtool: 'source-map',
   output: {
-    path: `${__dirname}/dist`,
+    path: path.resolve('dist'),
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',

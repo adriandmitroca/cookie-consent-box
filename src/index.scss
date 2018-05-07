@@ -1,16 +1,26 @@
+$desktop: 420px;
+
 .cookie-box {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: #222;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 400px;
   padding: 20px;
-  color: #fff;
-  font-size: 14px;
+  margin: 0;
   opacity: 1;
+  z-index: 1001;
   transition: all 0.5s ease;
+  width: calc(100% - 30px);
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+
+  @media (min-width: $desktop) {
+    width: 400px;
+    bottom: 30px;
+    left: auto;
+    right: 30px;
+  }
 
   &.hidden {
     transform: translateX(100%);
@@ -19,13 +29,31 @@
 
   &__title {
     text-transform: uppercase;
-    font-size: 20px;
     font-weight: 700;
+    color: #fff;
     margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+
+    @media (min-width: $desktop) {
+      text-align: left;
+      font-size: 20px;
+    }
   }
 
   &__content {
+    color: #fff;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+      text-align: left;
+      font-size: 14px;
+    }
   }
 
   &__buttons {
@@ -44,10 +72,21 @@
       color: #222;
       margin: 15px 0;
       cursor: pointer;
+      font-size: 14px;
+
+      @media (min-width: $desktop) {
+        font-size: 16px;
+      }
     }
 
     &.link {
       color: #fff;
+      font-size: 14px;
+
+      @media (min-width: $desktop) {
+        font-size: 13px;
+      }
+
 
       &:hover {
         text-decoration: none;

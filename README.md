@@ -10,7 +10,7 @@ how it works and looks, make sure to check out the [demo](https://adriandmitroca
 
 ## Usage
 
-### Common JS
+### Webpack
 
 You can install the package via package manager of your choice:
 
@@ -24,7 +24,7 @@ Import it as normal ES6 module:
 ```js
 import CookieBox from 'cookie-consent-box';
 
-new CookieBox().init();
+new CookieBox({ options }).init();
 ```
 
 and include in your SCSS file:
@@ -41,21 +41,20 @@ Or include it via jsDelivr CDN:
 <script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.0.1/dist/cookie-consent-box.min.js"></script>
 ```
 
-## Configuration
-
-You can configure the plugin using `CookieBoxConfig` object declared in your dom. 
-Make sure though to declare it before you load js file.
+Additionaly, you can configure the plugin using `CookieBoxConfig` object declared in your dom. 
+Just make sure that you declared it before you load js file.
 
 Example:
 ```scss
-<script>CookieBoxConfig = { color: '#ec008c', url: '/privacy-policy' }</script>
+<script>CookieBoxConfig = { brandColor: '#ec008c', url: '/privacy-policy' }</script>
 ```
 
 ## Available Options
 
 | Option | Type | Default | Description |
 |---|---|---|----|
-| color | string | #007bff | Brand color used for button |
+| brandColor | string | #007bff | Brand color used for button background |
+| textColor | string | #007bff | Color used for button text |
 | language | string | en | ISO 639 code. Supported languages: `en`, `pl` |
 | url  | string | # | Custom URL that points to your Privacy Policy page.
 
