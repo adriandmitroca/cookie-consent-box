@@ -3,9 +3,9 @@
 import languages from './languages';
 import { createCookie, readCookie } from './cookies';
 
-class CookieBox {
+export default class CookieBox {
   constructor() {
-    const userSettings = window.CookieBoxConfig;
+    const userSettings = window.CookieBoxConfig || {};
 
     this.box = document.createElement('div');
     this.box.className = 'cookie-box';

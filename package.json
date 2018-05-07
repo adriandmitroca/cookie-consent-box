@@ -1,14 +1,15 @@
 {
   "name": "cookie-consent-box",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Yet another simple reusable cookie box widget without any dependencies.",
-  "main": "dist/cookie-constent-box.js",
-  "jsnext:main": "src/index.js",
+  "main": "dist/cookie-consent.js",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "NODE_ENV=production webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build:scss": "node-sass src/index.scss dist/cookie-consent-box.css && src/index.scss dist/cookie-consent-box.min.css --output-style=compressed",
+    "build:js": "webpack --env dev && webpack --env build && npm run test",
+    "build": "npm run build:js && npm run build:scss",
     "lint": "eslint src --fix; exit 0 && stylelint \"src/**/*.scss\" --fix",
-    "prepublish": "npm run build"
+    "prepublish": "npm run lint && npm run build",
+    "watch": "webpack --progress --colors --watch --env dev && build:scss -- --watch"
   },
   "repository": {
     "type": "git",
@@ -28,14 +29,22 @@
   },
   "homepage": "https://github.com/adriandmitroca/cookie-consent-box",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "node-sass": "^4.9.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.11.0",
-    "laravel-mix": "^2.1.11",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.1.0",
-    "stylelint-webpack-plugin": "^0.10.4"
+    "stylelint-webpack-plugin": "^0.10.4",
+    "webpack": "^3.10.0",
+    "yargs": "^10.0.3"
   }
 }

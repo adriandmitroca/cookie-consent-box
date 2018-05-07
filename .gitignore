@@ -2,4 +2,5 @@ node_modules
 *.log
 yarn.lock
 mix-manifest.json
-hot
+package-lock.json
+*.map
