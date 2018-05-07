@@ -37,8 +37,8 @@ and include in your SCSS file:
 
 Or include it via jsDelivr CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/adriandmitroca/cookie-consent-box/dist/cookie-consent-box.min.css"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/adriandmitroca/cookie-consent-box/dist/cookie-consent-box.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.0.0/dist/cookie-consent-box.min.css"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.0.0/dist/cookie-consent-box.min.js"></script>
 ```
 
 ## Configuration
