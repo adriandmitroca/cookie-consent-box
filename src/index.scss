@@ -1,0 +1,57 @@
+.cookie-box {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: #222;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 400px;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 1;
+  transition: all 0.5s ease;
+
+  &.hidden {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+
+  &__content {
+    line-height: 1.5;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+
+  &__button {
+    border: 0;
+    font-weight: 700;
+    padding: 8px 15px;
+
+    &.accept {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+      color: #222;
+      margin: 15px 0;
+      cursor: pointer;
+    }
+
+    &.link {
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

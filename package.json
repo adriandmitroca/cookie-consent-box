@@ -1,0 +1,38 @@
+{
+  "name": "cookie-box",
+  "version": "0.1.0",
+  "description": "Yet another simple reusable cookie box widget without any dependencies.",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "NODE_ENV=production webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint src --fix; exit 0 && stylelint \"src/**/*.scss\" --fix",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriandmitroca/cookie-box.git"
+  },
+  "keywords": [
+    "adriandmitroca",
+    "cookie-box"
+  ],
+  "author": "Adrian Dmitroca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriandmitroca/cookie-box/issues"
+  },
+  "homepage": "https://github.com/adriandmitroca/cookie-box",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "laravel-mix": "^2.1.11",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.1.0",
+    "stylelint-webpack-plugin": "^0.10.4"
+  }
+}
