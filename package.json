@@ -1,6 +1,6 @@
 {
-  "name": "cookie-box",
-  "version": "0.1.0",
+  "name": "cookie-consent-box",
+  "version": "1.0.0",
   "description": "Yet another simple reusable cookie box widget without any dependencies.",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -12,18 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adriandmitroca/cookie-box.git"
+    "url": "https://github.com/adriandmitroca/cookie-consent-box.git"
   },
   "keywords": [
     "adriandmitroca",
-    "cookie-box"
+    "cookie-box",
+    "cookie-law",
+    "cookie-consent",
+    "cookie-compliance"
   ],
   "author": "Adrian Dmitroca",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adriandmitroca/cookie-box/issues"
+    "url": "https://github.com/adriandmitroca/cookie-consent-box/issues"
   },
-  "homepage": "https://github.com/adriandmitroca/cookie-box",
+  "homepage": "https://github.com/adriandmitroca/cookie-consent-box",
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",

@@ -2,8 +2,8 @@ let mix = require('laravel-mix');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 mix
-  .js('src/index.js', 'dist/cookie-box.js')
-  .sass('src/index.scss', 'dist/cookie-box.css')
+  .js('src/index.js', 'dist/cookie-consent-box.js')
+  .sass('src/index.scss', 'dist/cookie-consent-box.css')
   .webpackConfig({
   module: {
     rules: [
