@@ -1,6 +1,6 @@
 # cookie-consent-box
 
-[![Latest Version on NPM](https://img.shields.io/npm/v/@adriandmitroca/cookie-consent-box.svg?style=flat-square)](https://npmjs.com/package/cookie-consent-box)
+[![Latest Version on NPM](https://img.shields.io/npm/v/cookie-consent-box.svg?style=flat-square)](https://npmjs.com/package/cookie-consent-box)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/adriandmitroca/cookie-consent-box/master.svg?style=flat-square)](https://travis-ci.org/adriandmitroca/cookie-consent-box)
 
@@ -37,8 +37,8 @@ and include in your SCSS file:
 
 Or include it via jsDelivr CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.0.1/dist/cookie-consent-box.min.css"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.0.1/dist/cookie-consent-box.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.1.0/dist/cookie-consent-box.min.css"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@1.1.0/dist/cookie-consent-box.min.js"></script>
 ```
 
 Additionaly, you can configure the plugin using `CookieBoxConfig` object declared in your dom. 
