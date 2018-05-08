@@ -45,7 +45,7 @@ Additionaly, you can configure the plugin using `CookieBoxConfig` object declare
 Just make sure that you declared it before you load js file.
 
 Example:
-```scss
+```js
 <script>CookieBoxConfig = { brandColor: '#ec008c', url: '/privacy-policy' }</script>
 ```
 
@@ -54,7 +54,7 @@ Example:
 | Option | Type | Default | Description |
 |---|---|---|----|
 | brandColor | string | #007bff | Brand color used for button background |
-| textColor | string | #007bff | Color used for button text |
+| textColor | string | #000 | Color used for button text |
 | language | string | en | ISO 639 code. Supported languages: `en`, `pl` |
 | url  | string | # | Custom URL that points to your Privacy Policy page.
 
