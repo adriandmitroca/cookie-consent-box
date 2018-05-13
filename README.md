@@ -46,7 +46,7 @@ Just make sure that you declared it before you load js file.
 
 Example:
 ```js
-<script>CookieBoxConfig = { brandColor: '#ec008c', url: '/privacy-policy' }</script>
+<script>CookieBoxConfig = { backgroundColor: '#ec008c', url: '/privacy-policy' }</script>
 ```
 
 ## Available Options
