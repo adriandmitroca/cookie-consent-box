@@ -51,6 +51,8 @@
       color: currentColor;
       text-decoration: underline;
       white-space: nowrap; }
+      .cookie-box__desc a:hover {
+        color: currentColor; }
   @media (min-width: 420px) {
     .cookie-box__buttons {
       padding-left: 15px; } }
