@@ -68,6 +68,10 @@ $desktop: 420px;
       color: currentColor;
       text-decoration: underline;
       white-space: nowrap;
+
+      &:hover {
+        color: currentColor;
+      }
     }
   }
 
