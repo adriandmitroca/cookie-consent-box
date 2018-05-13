@@ -5,15 +5,13 @@
   background: #222;
   position: fixed;
   margin: 0;
-  opacity: 1;
   z-index: 1001;
   transition: all 0.5s ease;
   width: 100%;
   left: 0;
   bottom: 0; }
   .cookie-box.hidden {
-    transform: translateX(100%);
-    opacity: 0; }
+    transform: translateY(100%); }
   .cookie-box__inner {
     padding: 15px; }
     @media (min-width: 420px) {
@@ -26,7 +24,15 @@
     display: flex;
     align-items: center; }
   .cookie-box__icon {
-    margin-right: 20px; }
+    margin-right: 20px;
+    width: 44px;
+    position: relative; }
+    .cookie-box__icon svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px; }
   .cookie-box__title {
     font-weight: 700;
     color: currentColor;

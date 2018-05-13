@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+- added `cookieKey` option
+- tweaked closing transition to match new design
+
 ## 2.0.0
 - introduced whole new design
 - `brandColor` option became `backgroundColor`

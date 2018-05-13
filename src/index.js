@@ -18,7 +18,7 @@ export default class CookieBox {
       language: userSettings.language || 'en',
       containerWidth: userSettings.containerWidth || 1140,
       url: userSettings.url || '#',
-      cookieKey: 'cookie-box',
+      cookieKey: userSettings.cookieKey || 'cookie-box',
     };
     this.dictionary = languages[this.settings.language];
   }

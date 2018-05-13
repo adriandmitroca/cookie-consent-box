@@ -7,7 +7,6 @@ $desktop: 420px;
   background: #222;
   position: fixed;
   margin: 0;
-  opacity: 1;
   z-index: 1001;
   transition: all 0.5s ease;
   width: 100%;
@@ -15,8 +14,7 @@ $desktop: 420px;
   bottom: 0;
 
   &.hidden {
-    transform: translateX(100%);
-    opacity: 0;
+    transform: translateY(100%);
   }
 
   &__inner {
@@ -37,6 +35,16 @@ $desktop: 420px;
 
   &__icon {
     margin-right: 20px;
+    width: 44px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+    }
   }
 
   &__title {
