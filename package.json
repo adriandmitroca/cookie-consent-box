@@ -1,6 +1,6 @@
 {
   "name": "cookie-consent-box",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A tiny, dependency-free cookie box widget that helps you to be GDPR complaint after including 8 kB of code (gzipped)",
   "main": "dist/cookie-consent-box.js",
   "scripts": {
