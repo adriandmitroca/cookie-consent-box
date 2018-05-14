@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.4
+- fixed icon overlapping issue on mobile
+
 ## 2.0.1
 - added `cookieKey` option
 - tweaked closing transition to match new design

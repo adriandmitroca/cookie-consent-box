@@ -23,6 +23,8 @@
     flex: 1;
     display: flex;
     align-items: center; }
+    .cookie-box__content__inner {
+      flex: 1; }
   .cookie-box__icon {
     margin-right: 20px;
     width: 44px;
@@ -52,7 +54,8 @@
       text-decoration: underline;
       white-space: nowrap; }
       .cookie-box__desc a:hover {
-        color: currentColor; }
+        color: currentColor;
+        text-decoration: underline; }
   @media (min-width: 420px) {
     .cookie-box__buttons {
       padding-left: 15px; } }
