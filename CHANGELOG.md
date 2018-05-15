@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.0
+- added german translation (language: 'de')
+
 ## 2.0.4
 - fixed icon overlapping issue on mobile
 
