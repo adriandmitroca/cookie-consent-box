@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.2.1
+- example typo fix
+
 ## 2.2.0
 - added romanian translation (language: 'ro')
 
