@@ -37,8 +37,8 @@ and include in your SCSS file:
 
 Or include it via jsDelivr CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.0.4/dist/cookie-consent-box.min.css"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.0.4/dist/cookie-consent-box.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.2.0/dist/cookie-consent-box.min.css"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.2.0/dist/cookie-consent-box.min.js"></script>
 ```
 
 Additionaly, you can configure the plugin using `CookieBoxConfig` object declared in your dom. 
@@ -55,7 +55,7 @@ Example:
 |---|---|---|----|
 | backgroundColor | string | #007bff | Color used for background |
 | textColor | string | #fff | Color used for text |
-| language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl` |
+| language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl`, `ro` |
 | url  | string | # | Custom URL that points to your Privacy Policy page
 | containerWidth | int | 1140 | Width of your page container
 | cookieKey | string | cookie-box | Cookie name that is used to save users acceptance
@@ -76,5 +76,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 - [Adrian Dmitroca](https://github.com/adriandmitroca)
 - [Alexander Pepper](https://github.com/apepper)
+- [Daniel Stancu](https://github.com/birkof)
 - [All Contributors](../../contributors)
-
