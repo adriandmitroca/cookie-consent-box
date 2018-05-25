@@ -552,6 +552,12 @@ var languages = {
     content: 'Nasza strona używa ciasteczek do analizy statystyk i zapewnienia takiego samego działania pomiędzi wizytami.',
     accept: 'Akceptuję',
     learnMore: 'Czytaj więcej'
+  },
+  ro: {
+    title: 'Politica de utilizare Cookie-uri‎',
+    content: 'Site-ul nostru utilizează module cookie și alte tehnologii similare pentru a optimiza funcţionalitatea si a îmbunătăţi experienţa de navigare.',
+    accept: 'Acceptă',
+    learnMore: 'Află mai multe'
   }
 };
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.2.0
+- added romanian translation (language: 'ro')
+
 ## 2.1.0
 - added german translation (language: 'de')
 
