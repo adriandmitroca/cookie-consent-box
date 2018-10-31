@@ -78,6 +78,10 @@ export default class CookieBox {
   hide() {
     this.box.classList.add('hidden');
     createCookie(this.settings.cookieKey, true, this.settings.cookieExpireInDays);
+
+    setTimeout(() => {
+      this.box.remove();
+    }, 800);
   }
 }
 

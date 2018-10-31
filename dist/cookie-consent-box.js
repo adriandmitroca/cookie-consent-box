@@ -239,8 +239,14 @@ var CookieBox = function () {
   }, {
     key: 'hide',
     value: function hide() {
+      var _this2 = this;
+
       this.box.classList.add('hidden');
       (0, _cookies.createCookie)(this.settings.cookieKey, true, this.settings.cookieExpireInDays);
+
+      setTimeout(function () {
+        _this2.box.remove();
+      }, 800);
     }
   }]);
   return CookieBox;
