@@ -9,6 +9,7 @@
     "build": "npm run build:js && npm run build:scss",
     "lint": "eslint src --fix; exit 0 && stylelint \"src/**/*.scss\" --fix",
     "test": "npm run lint",
+    "prepublish": "npm run build",
     "watch": "webpack-dev-server --hot --inline & npm run build:scss -- --watch"
   },
   "repository": {
