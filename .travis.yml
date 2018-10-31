@@ -1,9 +1,6 @@
 language: node_js
 node_js:
 - stable
-script:
-- npm install
-- npm lint
 deploy:
   provider: npm
   email: dmitroca.adrian@gmail.com
