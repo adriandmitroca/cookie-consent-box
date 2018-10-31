@@ -57,6 +57,7 @@ Example:
 | textColor | string | #fff | Color used for text |
 | language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl`, `ro`, `it` |
 | url  | string | # | Custom URL that points to your Privacy Policy page
+| linkTarget | string | _blank | The `target` parameter for the url above.
 | containerWidth | int | 1140 | Width of your page container
 | cookieKey | string | cookie-box | Cookie name that is used to save users acceptance
 | cookieExpireInDays | int | 365 | The number of days after which the cookie expires

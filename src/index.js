@@ -18,6 +18,7 @@ export default class CookieBox {
       language: userSettings.language || 'en',
       containerWidth: userSettings.containerWidth || 1140,
       url: userSettings.url || '#',
+      linkTarget: userSettings.linkTarget || '_blank',
       cookieKey: userSettings.cookieKey || 'cookie-box',
       cookieExpireInDays: userSettings.cookieExpireInDays || 365,
       content: userSettings.content || {},
@@ -55,7 +56,7 @@ export default class CookieBox {
             <p class="cookie-box__title">${settings.content.title || languages[settings.language].title}</p>
             <div class="cookie-box__desc">
               ${settings.content.content || languages[settings.language].content}
-              <a href="${settings.url}" target="_blank">${settings.content.learnMore || languages[settings.language].learnMore} &raquo;</a>
+              <a href="${settings.url}" target="${settings.linkTarget}">${settings.content.learnMore || languages[settings.language].learnMore} &raquo;</a>
             </div>
             </div> 
           </div>
