@@ -194,6 +194,7 @@ var CookieBox = function () {
       containerWidth: userSettings.containerWidth || 1140,
       url: userSettings.url || '#',
       cookieKey: userSettings.cookieKey || 'cookie-box',
+      cookieExpireInDays: userSettings.cookieExpireInDays || 365,
       content: userSettings.content || {}
     };
     this.dictionary = _languages2.default[this.settings.language];
@@ -238,7 +239,7 @@ var CookieBox = function () {
     key: 'hide',
     value: function hide() {
       this.box.classList.add('hidden');
-      (0, _cookies.createCookie)(this.settings.cookieKey, true, 365);
+      (0, _cookies.createCookie)(this.settings.cookieKey, true, this.settings.cookieExpireInDays);
     }
   }]);
   return CookieBox;

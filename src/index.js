@@ -19,6 +19,7 @@ export default class CookieBox {
       containerWidth: userSettings.containerWidth || 1140,
       url: userSettings.url || '#',
       cookieKey: userSettings.cookieKey || 'cookie-box',
+      cookieExpireInDays: userSettings.cookieExpireInDays || 365,
       content: userSettings.content || {},
     };
     this.dictionary = languages[this.settings.language];
@@ -75,7 +76,7 @@ export default class CookieBox {
 
   hide() {
     this.box.classList.add('hidden');
-    createCookie(this.settings.cookieKey, true, 365);
+    createCookie(this.settings.cookieKey, true, this.settings.cookieExpireInDays);
   }
 }
 
