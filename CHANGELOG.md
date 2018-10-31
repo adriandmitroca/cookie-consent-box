@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.3.0
+- added italian translation (language: 'it')
+
 ## 2.2.1
 - example typo fix
 

@@ -11,6 +11,12 @@ const languages = {
     accept: 'Accept',
     learnMore: 'Learn more',
   },
+  it: {
+    title: 'Polizza cookie',
+    content: 'Il nostro sito utilizza cookie per analizzare le tue abitudini e per assicurarsi che la tua esperienza sia consistente tra le visite.',
+    accept: 'Accetta',
+    learnMore: 'Altre informazioni',
+  },
   fr: {
     title: 'Politiques d\'utilisation des cookies',
     content: 'Notre site web utilise des cookies pour analyser son utilisation et vous permettre ainsi d\'obtenir une expérience de qualité.',
