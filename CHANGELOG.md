@@ -1,7 +1,14 @@
 # Changelog
 
 ## 2.3.0
-- added italian translation (language: 'it')
+- added: italian translation (language: 'it')
+- added: french translation (language: 'fr')
+- added: option to customise notice content using `content` object
+- added: option to customise cookie expiration time using `expireInDays`
+- added: option to set href target using `linkTarget` param
+- tweak: hide "read more" link when `url` is not provided
+- tweak: remove box from the DOM after accepting it (resolves Safari iOS issue with transform recalculation on orientation change)
+- fixed: more robust styles to avoid conflicts with site styling
 
 ## 2.2.1
 - example typo fix

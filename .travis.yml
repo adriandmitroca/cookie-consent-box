@@ -1,10 +1,13 @@
 language: node_js
 node_js:
 - stable
+script:
+- npm install
+- npm lint
 deploy:
   provider: npm
   email: dmitroca.adrian@gmail.com
   api_key:
     secure: RBqG0GPa3IjYeQMb5qV6u4TbMazIckhUCjk1RNLD6NhBDVJWqczYNiBFvXmtspw3ObywU4j35rH4lqNI0r/0Z8xtc/bB2J0Ca1p2EScrIJtxBeR6NBid4jS7NsiPaapCrf9KH8tElau8A9FoehTEeSJ8+8qHwTc8uXZBeLJ9+VQBUZ7/oI4t7//7Qn7649BEsH+26j4GGsaRjmX/bGAhv+rp+8kgT4SVuvqJvNQoYIhuN7hsWStQCvn++2Lvq9jD1l19V+l2SqJT3S+H/uQElE+aK2juotS3IH5oIWiaefTf6TdkPpiXj2EOAN7OamX2bhc3hm4B5Yke+uDJuSpQpzwxQaqjNfzRMUmDrX35QBKKQWpVgvjDAmXeAojlBIfQoGztXmehC1Z/pmXbVpUpKfxL/T2sDpnsn0+rSRpFTHRNIqqqwYdF1OGnbIOE4PESp7gt56eVDP31I1LXEiLmc+3w9aE6F9W57CnphqR6GidNmzNsnCMp5NouVbuSoDyZb+qFUcGBG6tf5RDKx+29EJo6A4RwDMsdBK0r/j5m5kcrVyqNdV8OGD8c1n6c3kpsi760IwNRqDMSxSbgtpxLHcOurglG+aYjTQFSlB8ttdcaHpNKZ2Xda0ruHrLuwL+ZlYTMHJQtcZs96IGLZb9awWYZ4QnruxK2urwPrQiXhbY=
   on:
-    branch: master
+    tags: true

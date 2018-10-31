@@ -68,7 +68,7 @@
   @media (min-width: 420px) {
     .cookie-box__buttons {
       padding-left: 15px; } }
-  .cookie-box__button {
+  .cookie-box__button, .cookie-box__button:hover {
     font-weight: 700;
     display: block;
     border-radius: 24px;
@@ -78,15 +78,18 @@
     background: transparent;
     border: 2px solid currentColor;
     padding: 10px 20px;
-    white-space: nowrap; }
-    @media (max-width: 420px) {
-      .cookie-box__button {
-        margin: 15px auto 0; } }
-    .cookie-box__button span {
-      margin-right: 5px; }
-    .cookie-box__button svg {
-      position: relative;
-      top: 3px; }
-    .cookie-box__button span,
-    .cookie-box__button svg {
-      display: inline-block; }
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: none;
+    height: auto; }
+  @media (max-width: 420px) {
+    .cookie-box__button {
+      margin: 15px auto 0; } }
+  .cookie-box__button span {
+    margin-right: 5px; }
+  .cookie-box__button svg {
+    position: relative;
+    top: 3px; }
+  .cookie-box__button span,
+  .cookie-box__button svg {
+    display: inline-block; }
