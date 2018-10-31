@@ -59,6 +59,7 @@ Example:
 | url  | string | # | Custom URL that points to your Privacy Policy page
 | containerWidth | int | 1140 | Width of your page container
 | cookieKey | string | cookie-box | Cookie name that is used to save users acceptance
+| content | object/null | defaults to language | Content object accepts following properties: `title`, `content`, `accept`, `learnMore`.
 
 ## Changelog
 
