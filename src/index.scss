@@ -1,9 +1,10 @@
 $desktop: 420px;
+$font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 .cookie-box {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $font-base;
   background: #222;
   position: fixed;
   margin: 0;
@@ -12,6 +13,16 @@ $desktop: 420px;
   width: 100%;
   left: 0;
   bottom: 0;
+  letter-spacing: 0;
+
+  &, * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
 
   &.hidden {
     transform: translateY(100%);
@@ -48,6 +59,7 @@ $desktop: 420px;
       transform: translateY(-50%);
       width: 44px;
       height: 44px;
+      vertical-align: initial;
     }
   }
 
@@ -87,16 +99,21 @@ $desktop: 420px;
   }
 
   &__button {
-    font-weight: 700;
-    display: block;
-    border-radius: 24px;
-    color: currentColor;
-    cursor: pointer;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid currentColor;
-    padding: 10px 20px;
-    white-space: nowrap;
+    &, &:hover {
+      font-weight: 700;
+      display: block;
+      border-radius: 24px;
+      color: currentColor;
+      cursor: pointer;
+      font-size: 16px;
+      background: transparent;
+      border: 2px solid currentColor;
+      padding: 10px 20px;
+      white-space: nowrap;
+      font-family: $font-base;
+      text-transform: none;
+      height: auto;
+    }
 
     @media (max-width: $desktop) {
       margin: 15px auto 0;

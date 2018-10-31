@@ -9,7 +9,15 @@
   transition: all 0.5s ease;
   width: 100%;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  letter-spacing: 0; }
+  .cookie-box, .cookie-box * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
   .cookie-box.hidden {
     transform: translateY(100%); }
   .cookie-box__inner {
@@ -34,7 +42,8 @@
       top: 50%;
       transform: translateY(-50%);
       width: 44px;
-      height: 44px; }
+      height: 44px;
+      vertical-align: initial; }
   .cookie-box__title {
     font-weight: 700;
     color: currentColor;
