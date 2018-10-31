@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.3.1
+- added: portuguese translation (language: 'pt')
+
 ## 2.3.0
 - added: italian translation (language: 'it')
 - added: french translation (language: 'fr')

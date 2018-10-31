@@ -568,6 +568,12 @@ var languages = {
     accept: 'Accepter',
     learnMore: 'En apprendre plus'
   },
+  pt: {
+    title: 'Política de Cookies',
+    content: 'O nosso website utiliza Cookies para analisar a forma como o mesmo é utilizado e garantir uma experiência consistente e de qualidade para todos os visitantes.',
+    accept: 'Aceitar',
+    learnMore: 'Saber mais'
+  },
   pl: {
     title: 'Polityka cookies',
     content: 'Nasza strona używa ciasteczek do analizy statystyk i zapewnienia takiego samego działania pomiędzi wizytami.',

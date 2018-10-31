@@ -37,8 +37,8 @@ and include in your SCSS file:
 
 Or include it via jsDelivr CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.0/dist/cookie-consent-box.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.0/dist/cookie-consent-box.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.1/dist/cookie-consent-box.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.1/dist/cookie-consent-box.min.js"></script>
 ```
 
 Additionaly, you can configure the plugin using `CookieBoxConfig` object declared in your DOM. 
@@ -55,7 +55,7 @@ Example:
 |---|---|---|----|
 | backgroundColor | string | #007bff | Color used for background |
 | textColor | string | #fff | Color used for text |
-| language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl`, `ro`, `it`, `fr` |
+| language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl`, `ro`, `it`, `fr`, `pt` |
 | url  | string/null | null | Custom URL that points to your Privacy Policy page. If empty, link is automatically hidden.
 | linkTarget | string | _blank | The `target` parameter for the url above.
 | containerWidth | int | 1140 | Width of your page container
