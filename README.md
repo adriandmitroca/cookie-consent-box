@@ -56,7 +56,7 @@ Example:
 | backgroundColor | string | #007bff | Color used for background |
 | textColor | string | #fff | Color used for text |
 | language | string | en | ISO 639 code. Supported languages: `en`, `de`, `pl`, `ro`, `it` |
-| url  | string | # | Custom URL that points to your Privacy Policy page
+| url  | string/null | null | Custom URL that points to your Privacy Policy page. If empty, "Read more" link is hidden.
 | linkTarget | string | _blank | The `target` parameter for the url above.
 | containerWidth | int | 1140 | Width of your page container
 | cookieKey | string | cookie-box | Cookie name that is used to save users acceptance
