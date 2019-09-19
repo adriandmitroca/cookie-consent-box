@@ -60,6 +60,7 @@ Example:
 | linkTarget | string | _blank | The `target` parameter for the url above.
 | containerWidth | int | 1140 | Width of your page container
 | cookieKey | string | cookie-box | Cookie name that is used to save users acceptance
+| cookieDomain | string | defaults to the host portion of the current document location | The domain that the cookie belongs to
 | cookieExpireInDays | int | 365 | The number of days after which the cookie expires
 | content | object/null | defaults to language | Content object accepts following properties: `title`, `content`, `accept`, `learnMore`.
 

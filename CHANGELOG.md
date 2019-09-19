@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.0
+- added `cookieDomain` option
+
 ## 2.3.1
 - added: portuguese translation (language: 'pt')
 

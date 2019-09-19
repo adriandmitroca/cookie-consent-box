@@ -20,6 +20,7 @@ export default class CookieBox {
       url: userSettings.url || null,
       linkTarget: userSettings.linkTarget || '_blank',
       cookieKey: userSettings.cookieKey || 'cookie-box',
+      cookieDomain: userSettings.cookieDomain || document.location.host,
       cookieExpireInDays: userSettings.cookieExpireInDays || 365,
       content: userSettings.content || {},
     };
@@ -58,7 +59,7 @@ export default class CookieBox {
               ${settings.content.content || languages[settings.language].content}
               ${settings.url ? `<a href="${settings.url}" target="${settings.linkTarget}">${settings.content.learnMore || languages[settings.language].learnMore} &raquo;</a>` : ''}
             </div>
-            </div> 
+            </div>
           </div>
         <div class="cookie-box__buttons">
           <button class="cookie-box__button">
@@ -77,7 +78,12 @@ export default class CookieBox {
 
   hide() {
     this.box.classList.add('hidden');
-    createCookie(this.settings.cookieKey, true, this.settings.cookieExpireInDays);
+    createCookie(
+      this.settings.cookieKey,
+      true,
+      this.settings.cookieExpireInDays,
+      this.settings.cookieDomain,
+    );
 
     setTimeout(() => {
       this.box.remove();
