@@ -42,6 +42,7 @@ $font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica 
     flex: 1;
     display: flex;
     align-items: center;
+    font-family: $font-base;
 
     &__inner {
       flex: 1;
