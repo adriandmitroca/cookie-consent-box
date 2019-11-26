@@ -1,4 +1,4 @@
-const createCookie = (name, value, days) => {
+const createCookie = (name, value, days, domain) => {
   let expires;
 
   if (days) {
@@ -9,7 +9,7 @@ const createCookie = (name, value, days) => {
     expires = '';
   }
 
-  document.cookie = `${name}=${value}${expires}; path=/`;
+  document.cookie = `${name}=${value}${expires}; path=/; domain=${domain}`;
 };
 
 const readCookie = (name) => {
