@@ -37,8 +37,8 @@ and include in your SCSS file:
 
 Or include it via jsDelivr CDN:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.1/dist/cookie-consent-box.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.3.1/dist/cookie-consent-box.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.4.0/dist/cookie-consent-box.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/cookie-consent-box@2.4.0/dist/cookie-consent-box.min.js"></script>
 ```
 
 Additionaly, you can configure the plugin using `CookieBoxConfig` object declared in your DOM. 
