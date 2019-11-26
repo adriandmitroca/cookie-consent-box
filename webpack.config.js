@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const env = require('yargs').argv.env;
 const path = require('path');
 const pkg = require('./package.json');
@@ -10,13 +9,13 @@ const plugins = [];
 let outputFile;
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
   outputFile = `${libraryName}.min.js`;
 } else {
   outputFile = `${libraryName}.js`;
 }
 
 const config = {
+  mode: env === 'build' ? 'production' : 'development',
   entry: path.resolve('src/index.js'),
   devtool: 'source-map',
   output: {
@@ -41,6 +40,9 @@ const config = {
     ],
   },
   plugins,
+  optimization: {
+    minimize: env === 'build',
+  },
 };
 
 module.exports = config;

@@ -2,6 +2,7 @@
 
 ## 2.4.0
 - added `cookieDomain` option
+- fixed font family mismatch [#11]
 
 ## 2.3.1
 - added: portuguese translation (language: 'pt')
